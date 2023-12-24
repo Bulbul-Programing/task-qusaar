@@ -5,7 +5,7 @@ import { AuthContext } from "../Component/AuthProvider/AuthProvider";
 import axios from "axios";
 
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://task-quasar-server-iota.vercel.app'
 })
 const useAxiosSecure = () => {
     return axiosSecure

@@ -92,14 +92,14 @@ const TaskFeed = () => {
                         </div>
                     </div>
                 </dialog>
-                <input type="text" className="p-3 ml-10 border-2 font-semibold rounded-lg focus:outline-blue-400" placeholder="Search Hare" name="" id="" />
+                
             </div>
             <div className="flex justify-between gap-x-5 pt-10">
                 <div className=" bg-slate-200 w-1/3  shadow-xl rounded-lg p-5 ">
                     <h1 className="bg-orange-400 px-10 py-1 inline-block text-white font-bold rounded-lg">Task</h1>
                     <div>
                         {
-                            tasks.map(task =>
+                            tasks?.map(task =>
                                 <div key={task._id} className="p-2 shadow-lg my-4 rounded-lg">
                                     <h1 className="text-lg font-bold p-2 shadow-md rounded-lg">{task.title}</h1>
                                     <p className="my-3">{task.description.slice(0, 50)}</p>

@@ -81,7 +81,7 @@ const TaskHome = () => {
             <div className="flex gap-x-10 p-10">
                 <div className="bg-blue-500 w-[200px] text-white px-5 p-3 rounded-lg">
                     <h1 className="text-2xl font-semibold mb-2">Total Task</h1>
-                    <h2 className="text-3xl font-bold">{AllTask.length}</h2>
+                    <h2 className="text-3xl font-bold">{AllTask?.length}</h2>
                 </div>
                 <div className="bg-red-400 w-[200px] text-white px-5 p-3 rounded-lg">
                     <h1 className="text-2xl font-semibold mb-2">Complete Task</h1>
@@ -94,7 +94,7 @@ const TaskHome = () => {
                 </div>
                 <div>
                     {
-                        AllTask.map((task, index) =>
+                        AllTask?.map((task, index) =>
                             <div key={index} className="shadow-md p-4 rounded-lg my-5 flex justify-between items-center">
                                 <div>
                                     <h1 className="text-lg font-medium">{task.title}</h1>
